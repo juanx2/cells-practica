@@ -1,0 +1,1 @@
+export { CellsPractica } from './src/CellsPractica.js';
