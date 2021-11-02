@@ -41,6 +41,15 @@ export class CellsPractica extends LitElement {
       getComponentSharedStyles('cells-practica-shared-styles')
     ];
   }
+ 
+  _actionHome({detail}){
+    const {selected}=detail;
+    this.dispatchEvent(new CustomEvent('action-selected-header',{
+      detail:selected,
+      bubbles:true,
+      composed :true
+    }))
+  }
 
   // Define a template
   render() {
@@ -71,7 +80,7 @@ export class CellsPractica extends LitElement {
 		L234.1,157z"/>
 </g>
 </svg>
-    <bbva-link class="btnHome">Home</bbva-link>
+    <bbva-link class="btnHome"  @action-selected-header='${this._actionHome}'>Home</bbva-link>
     <div class="nbsp">&nbsp;&nbsp;|&nbsp;&nbsp;</div>
     <bbva-link class="btnDetail">Detail</bbva-link>
     </div>
