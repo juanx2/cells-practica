@@ -54,13 +54,11 @@ export class CellsPractica extends LitElement {
   // Define a template
   render() {
     return html`
-
-
 <div class="right-header" >
- <svg class="imagen" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+
+<svg class = "imagen" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 600 179.8" style="enable-background:new 0 0 600 179.8;" xml:space="preserve">
-   
-<style type="text/css" >
+<style type="text/css">
 	.st0{fill:white;}
 </style>
 <title>Mesa de trabajo 1 copia</title>
@@ -80,10 +78,12 @@ export class CellsPractica extends LitElement {
 		L234.1,157z"/>
 </g>
 </svg>
-    <bbva-link class="btnHome"  @selected-header='${this._actionHome}'>Home</bbva-link>
+ <div class="boton-icon">   
+ <bbva-link class="btnHome" @click='${this._actionHome}' @action-selected-header='${this._actionHome}'>Home</bbva-link>
     <div class="nbsp">&nbsp;&nbsp;|&nbsp;&nbsp;</div>
     <bbva-link class="btnDetail">Detail</bbva-link>
-    </div>
+    </div>  
+  </div>
     `;
   }
 }
