@@ -44,24 +44,6 @@ export default css`:host {
   font-size: 28px;
 }
 
-.prueba {
-  display: flex;
-}
-
-.prueba1 {
-  background: red;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.prueba2 {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  background: green;
-}
-
 *, *:before, *:after {
   box-sizing: inherit;
 }
